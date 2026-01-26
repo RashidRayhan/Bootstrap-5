@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Progress Bar</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Progrss bar with 70%-->
+    <div class="container mt-5">
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+        <div class="progress mt-5">
+            <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <div class="progress mt-5" style="height: 30px">
+            <div class="progress-bar" style="width: 40%">40%</div>
+        </div>
+        <!---Use Progress color-->
+        <div class="progress mt-5">
+            <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+        </div>
+        <!---Progress striped-->
+        <div class="progress mt-5">
+            <div class="progress-bar progress-bar-striped bg-info" style="width:70%">70%</div>
+        </div>
+        <!---Progress striped animation-->
+        <div class="progress mt-5">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 60%;">60%</div>
+        </div>
+        <!---progress striped animation height-->
+        <div class="progress mt-5" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%;">40%</div>
+        </div>
+    </div>
+
+    <!--Multi step progress-->
+    <div class="container mt-5">
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 40%">Danger 40%</div>
+            <div class="progress-bar bg-info" style="width: 40%;">Info 40%</div>
+            <div class="progress-bar bg-warning" style="width: 20%;">Warning 20%</div>
+        </div>
+    </div>
+</body>
+</html>
