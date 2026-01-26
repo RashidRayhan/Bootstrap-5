@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Dropdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Dropdowns-->
+    <div class="container mt-3">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Link 1</a></li>
+            <li><a href="#" class="dropdown-item">Link 2</a></li>
+        </ul>
+        </div>
+    </div>
+    <!--Divder Dropdown-->
+    <div class="container mt-3">
+        <h2>Dropdowns</h2>
+        <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Drodown menu</button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a href="#" class="dropdown-item">Another link</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Drodown dropend-->
+    <div class="container mt-3">
+        <h2>Dropdowns</h2>
+        <p>Add the .dropend class next to the dropdown menu to right-align the dropdown. Note that the caret/arrows is added automatically:</p>
+        <div class="dropdown dropend">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Dropdown dropend</button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <!---Dropdown dropstart-->
+    <div class="container mt-3">
+        <h2>Dropdowns</h2>
+        <p>Add the .dropend class next to the dropdown menu to right-align the dropdown. Note that the caret/arrows is added automatically:</p>
+        <div class="dropdown dropstart">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Dropdown Start</button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
