@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Button Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary">Apple</button>
+    </div>
+    <!---Bootstrap Group Button-->
+    <div class="container mt-5">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary active">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Oppo</button>
+            <button type="button" class="btn btn-primary disabled">Sony</button>
+        </div>
+    </div>
+
+    <!----Vertical Group Button-->
+    <div class="container mt-5">
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Sumsang</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+        </div>
+    </div>
+
+    <!--dropdown group button-->
+    <div class="container mt-5">
+        <h2>Nesting Button Groups</h2>
+        <p>Nest button groups to create dropdown menus:</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Sumsung</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Tablet</a>
+                    <a href="#" class="dropdown-item">Smartphone</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
