@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----Bootstrap Buttons-->
+    <div class="Container p-5">
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary Button</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <button type="button" class="btn btn-light">Light</button>
+    </div>
+    <div class="container mt-5">
+        <h2>Button Elements</h2>
+        <!---Use extar link button-->
+        <a href="#" class="btn btn-primary">Link button</a>
+        <!--Normal button-->
+        <button type="button" class="btn btn-primary">Normal button</button>
+        <!----All input Button-->
+        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="reset" class="btn btn-primary" value="Reset">
+        <input type="upload" class="btn btn-primary" value="Upload">
+    </div>
+    <!---Outline button-->
+    <div class="container mt-5">
+        <h2>Button Outline</h2>
+        <button type="button" class="btn btn-outline-primary">Basic</button>
+        <input type="submit" class="btn btn-outline-danger" value="submit">
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+    </div>
+    <!----Add All size button---->
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+        <button type="button" class="btn btn-primary">Defult</button>
+        <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+    </div>
+    <!---D grid button-->
+    <div class="container mt-5">
+        <h2>Block Level Buttons</h2>
+        <p>To create a block level button that spans the entire width of the parent element, use the .d-grid "helper" class on the parent element:</p>
+        <div class="d-grid">
+            <button type="button" class="btn btn-primary btn-block">Full Button</button>
+        </div>
+        <div class="d-grid gap-3">
+            <button type="button" class="btn btn-primary btn-block">FUll Button</button>
+            <button type="button" class="btn btn-warning btn-block">Waring Button</button>
+        </div>
+    </div>
+    <!---Active/Disable button-->
+    <div class="container mt-5">
+        <div class="d-grid gap-5">
+            <button type="button" class="btn btn-primary active">Active button</button>
+            <button type="button" class="btn btn-warning disabled">Disable Button</button>
+            <a href="#" class="btn btn-info active">Link Button</a>
+        </div>
+    </div>
+    <!---Spinner Buttons-->
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+        <button type="button" class="btn btn-warning">
+            <span class="spinner-border spinner-border-md"></span>Loading.......
+        </button>
+        <button type="button" class="btn btn-info">
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Loading......
+        </button>
+    </div>
+</body>
+</html>
