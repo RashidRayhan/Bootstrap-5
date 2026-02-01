@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Navbar Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- A grey vertical navbar -->
+     <nav class="navbar bg-light mt-5">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+     </nav>
+     <!-- Black background with white text -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <!-- Blue background with white text -->
+       <nav class="navbar navbar-expand-sm bg-primary navbar-dark mt-5">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact us</a>
+                </li>
+            </ul>
+        </div>
+       </nav>
+
+       <!---Navbar logo add-->
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-5">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Logo</a>
+        </div>
+       </nav>
+
+       <!---Add navbar logo-->
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-barnd">
+                <img src="logo.png" alt="Logo" class="rounded-pill" style="width: 40px;">
+            </a>
+        </div>
+       </nav>
+
+       <!---collapsible navigation bar-->
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="logo.png" alt="Logo" style="width: 40px;" class="rounded-pill">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsenavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsenavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </nav>
+
+       <!---Dropdown Navbar menu-->
+       <nav class="navbar navbar-expand-sm bg-primary navbar-dark mt-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="logo.png" alt="Logo" class="rounded-pill" style="width:40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenavbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsenavbar1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                                <li><a href="#" class="dropdown-item">Link 3</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </nav>
+
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top mt-5">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-target="#collapsenavbar2" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsenavbar2">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                     <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Link 1</a></li>
+                        <li><a href="#" class="dropdown-item">Link 2</a></li>
+                        <li><a href="#" class="dropdown-item">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <from class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="Search">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </from>
+        </div>
+       </nav>
+       <body>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Two Unequal Responsive Columns</h2>
+                    <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Two Unequal Responsive Columns</h2>
+                    <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                </div>
+            </div>
+            <div class="container-fluid mt-4">
+                <h2>Two Unequal Responsive Columns</h2>
+                <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+            </div>
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-md-4">
+                    <h2>Two Unequal Responsive Columns</h2>
+                    <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                    <div class="col-md-4">
+                    <h2>Two Unequal Responsive Columns</h2>
+                    <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                    <div class="col-md-4">
+                    <h2>Two Unequal Responsive Columns</h2>
+                    <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Two Unequal Responsive Columns</h2>
+                        <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Two Unequal Responsive Columns</h2>
+                        <p>The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:The following example shows how to get two various-width columns starting at tablets and scaling to large extra desktops:</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </body>
+</body>
+</html>
