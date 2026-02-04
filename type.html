@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 All type</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-----Select Options-->
+    <div class="container mt-3">
+        <h2>Form Select options</h2>
+        <select class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </div>
+    <!---Browser select-->
+    <div class="container mt-3">
+        <label class="form-label" for="browser">Choose your browser from the list:</label>
+        <input class="form-control" id="browser" name="browser" list="browsers">
+        <datalist id="browsers">
+            <option value="chorme">
+            <option value="edge">
+            <option value="firfox">
+        </datalist>
+    </div>
+    <!--Radio Button-->
+    <div class="container mt-3">
+        <h2>Radio buttons</h2>
+        <p>Radio buttons are used if you want to limit the user to just one selection from a list of preset options.</p>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="radio1" checked>
+            <label class="form-label" for="radio1">Radio 1</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="radio2">
+            <label class="form-label" for="radio2">Radio 2</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio" name="optradio" value="radio3">
+            <label class="form-label" for="radio3">Radio 3</label>
+        </div>
+    </div>
+    <!---Toggle Switches--->
+    <div class="container mt-3">
+        <h2>Toggle Switches</h2>
+        <p>If you want your checkbox to be styled as a toggle switch, use the .form-switch class together with the .form-check container:</p>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" name="darkmode" id="mySwitch" value="yes" checked>
+            <label class="form-label" for="mySwitch">Dark</label>
+        </div>
+    </div>
+    <!---Custom Range-->
+    <div class="container mt-3">
+        <h2>Custom Range</h2>
+        <p>To style a range menu, add the .form-range class to the input element with type="range":</p>
+        <label class="form-range" for="customRange">Default range</label>
+        <input type="range" class="form-range" id="customRange" step="6">
+    </div>
+    <!--Input Groups--->
+    <div class="container mt-3">
+        <h2>Input Groups</h2>
+        <p>To style the specified help text, use the .input-group-text class:</p>
+        <form>
+            <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input class="form-control" type="text" placeholder="username">
+            </div>
+        </form>
+        <form>
+            <div class="input-group mt-5">
+                <input type="text" class="form-control" placeholder="example@gmail.com">
+                <span class="input-group-text">@eample.com</span>
+            </div>
+            <!---Search with button-->
+            <div class="input-group mt-5">
+                <input type="text" class="form-control" placeholder="search">
+                <button type="button" class="btn btn-primary">Go</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Floating Labels / Animated Labels-->
+    <div class="container mt-5">
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+            <label class="form-label">Name</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Type email">
+            <label class="form-label">Email</label>
+        </div>
+        <div class="form mb-3 mt-3">
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+    <!---Form Validation-->
+    <div class="container mt-3">
+        <form action="/action.php" class="was-validated">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" name="uname" id="uname" placeholder="Username" required>
+                <label class="form-label">Username</label>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Type email" required>
+                <label class="form-label">Email</label>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="password" class="form-control" name="pwd" id="pswd" placeholder="password" required>
+                <label class="from-label" for="pwd">Password</label>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="from-check mb-3">
+                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                <label class="from-label">Remember</label>
+            </div>
+            <button class="btn btn-primary" type="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
